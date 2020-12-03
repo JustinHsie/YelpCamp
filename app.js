@@ -56,7 +56,7 @@ const store = new MongoStore({
     url: dbUrl,
     secret,
     touchAfter: 24 * 3600
-})
+});
 
 store.on("error", function (e) {
     console.log("Session store error", e)
